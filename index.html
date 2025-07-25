@@ -18,11 +18,12 @@
         <div class="container hero">
             <h1 class="logo">The Stupid Portfolio</h1>
             <div class="hero-content">
-                <h2 class="hero-headline">I build fast, creative websites & tools for small brands and creators.</h2>
-                <p class="hero-sub">Wanna turn stupid ideas into smart products? <span class="hero-cta">Let's
+                <h2 class="hero-headline">I build fast, creative websites & tools for small brands and creators.<span
+                        class="typed-title"></span></h2>
+                <p class="hero-sub fade-child">Wanna turn stupid ideas into smart products? <span class="hero-cta">Let's
                         talk.</span></p>
             </div>
-            <nav class="nav">
+            <nav class="nav" aria-label="Main navigation">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
@@ -31,61 +32,61 @@
     </header>
     <section id="about" class="section about fade-in-section">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a self-taught dev turning stupid ideas into useful tools. From survival games to random giveaway apps
-                — if it’s quirky and codeable, I build it.<br><br><b>Need a website or MVP?</b> Let’s build it — contact
-                me below.</p>
+            <h2 class="fade-child">About Me</h2>
+            <p class="fade-child">I'm a self-taught dev turning stupid ideas into useful tools. From survival games to
+                random giveaway apps — if it’s quirky and codeable, I build it.<br><br><b>Need a website or MVP?</b>
+                Let’s build it — contact me below.</p>
         </div>
     </section>
     <section id="projects" class="section projects fade-in-section">
         <div class="container">
-            <h2>Projects</h2>
+            <h2 class="fade-child">Projects</h2>
             <div class="project-list">
-                <div class="project" data-project="1">
+                <div class="project fade-child" data-project="1">
                     <h3>🧠 The Stupid Pomodoro</h3>
                     <p>A minimalist productivity timer for chaotic focus sessions.<br>Built for people who want to get
                         things done without distractions.</p>
                     <div class="project-tech">Tech: HTML, CSS, JavaScript</div>
-                    <div class="project-links">
+                    <!-- <div class="project-links">
                         <a href="https://thestupidpomodoro.netlify.app/" target="_blank" class="project-link">Live
                             Demo</a>
-                        <a href="https://github.com/yourusername/stupid-pomodoro" target="_blank"
+                        <a href="https://github.com/ValijonJumaboyev/pomodoro" target="_blank"
                             class="project-link">Code</a>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="project" data-project="2">
+                <div class="project fade-child" data-project="2">
                     <h3>🎬 Cinema Landing Page</h3>
                     <p>A sleek, modern landing page for a cinema platform.<br>Showcases upcoming movies and easy ticket
                         booking.</p>
                     <div class="project-tech">Tech: HTML, CSS, JavaScript</div>
-                    <div class="project-links">
+                    <!-- <div class="project-links">
                         <a href="https://thestupidcinema.netlify.app/" target="_blank" class="project-link">Live
                             Demo</a>
-                        <a href="https://github.com/yourusername/stupid-cinema" target="_blank"
+                        <a href="https://github.com/ValijonJumaboyev/cinema" target="_blank"
                             class="project-link">Code</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-        <div class="modal" id="projectModal">
+        <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
             <div class="modal-content">
-                <span class="close-modal">&times;</span>
+                <span class="close-modal" aria-label="Close project details">&times;</span>
                 <div class="modal-body"></div>
             </div>
         </div>
     </section>
     <section id="contact" class="section contact fade-in-section">
         <div class="container">
-            <h2>Contact</h2>
-            <p class="contact-cta">Want to work together or chat about a project? Reach out!</p>
-            <form class="contact-form" id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <div class="form-error" id="formError"></div>
+            <h2 class="fade-child">Contact</h2>
+            <p class="contact-cta fade-child">Want to work together or chat about a project? Reach out!</p>
+            <form class="contact-form fade-child" id="contactForm" autocomplete="off">
+                <input type="text" id="name" placeholder="Your Name" required aria-label="Your Name">
+                <input type="email" id="email" placeholder="Your Email" required aria-label="Your Email">
+                <textarea id="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
+                <div class="form-error" id="formError" aria-live="polite"></div>
                 <button type="submit">Send</button>
             </form>
-            <div class="social-links">
+            <div class="social-links fade-child">
                 <a href="mailto:your@email.com" aria-label="Email">Email</a>
                 <a href="https://discordapp.com/users/yourdiscord" target="_blank" aria-label="Discord">Discord</a>
                 <a href="https://twitter.com/yourtwitter" target="_blank" aria-label="Twitter">Twitter</a>
