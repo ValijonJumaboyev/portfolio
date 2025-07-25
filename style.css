@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     background: #0a192f;
     color: #ccd6f6;
 }
@@ -167,9 +167,10 @@ body {
 
 .logo {
     color: #1e90ff;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    margin: 0;
+    margin: 0 0 12px 0;
+    letter-spacing: 1px;
 }
 
 .nav {
@@ -189,21 +190,21 @@ body {
 }
 
 .section {
-    padding: 80px 0 60px 0;
+    padding: 64px 0 48px 0;
 }
 
 .about h2,
 .projects h2,
-.skills h2,
 .contact h2 {
     color: #1e90ff;
     font-size: 2rem;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 }
 
 .about p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     max-width: 600px;
+    line-height: 1.7;
 }
 
 .project-list {
@@ -212,19 +213,52 @@ body {
     gap: 32px;
 }
 
+.project {
+    background: #112240;
+    border-radius: 12px;
+    padding: 32px 24px 24px 24px;
+    flex: 1 1 320px;
+    min-width: 260px;
+    max-width: 400px;
+    box-shadow: 0 4px 24px 0 rgba(30, 144, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
 .project h3 {
     color: #1e90ff;
-    margin-top: 0;
+    margin: 0 0 10px 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.project p {
+    margin: 0 0 10px 0;
+    font-size: 1.05rem;
+    color: #ccd6f6;
+}
+
+.project-tech {
+    font-size: 0.98rem;
+    color: #7ecfff;
+    margin-bottom: 10px;
+}
+
+.project-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 6px;
 }
 
 .project-link {
-    display: inline-block;
-    margin-top: 16px;
     color: #1e90ff;
     text-decoration: none;
     font-weight: 600;
     border-bottom: 2px solid #1e90ff;
     transition: color 0.2s, border-color 0.2s;
+    font-size: 1rem;
 }
 
 .project-link:hover {
@@ -276,11 +310,12 @@ body {
 
 .social-links {
     margin-top: 24px;
+    display: flex;
+    gap: 24px;
 }
 
 .social-links a {
     color: #1e90ff;
-    margin-right: 24px;
     font-size: 1.1rem;
     text-decoration: none;
     font-weight: 600;
@@ -299,26 +334,26 @@ body {
     font-size: 1rem;
 }
 
-@media (max-width: 800px) {
+.contact-cta {
+    font-size: 1.1rem;
+    color: #7ecfff;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 900px) {
     .project-list {
         flex-direction: column;
         gap: 20px;
     }
 
-    .nav {
-        float: none;
-        text-align: center;
-        margin-top: 16px;
-    }
-
-    .skills-list li {
-        width: 100%;
+    .hero-headline {
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width: 600px) {
     .section {
-        padding: 48px 0 32px 0;
+        padding: 36px 0 24px 0;
     }
 
     .container {
@@ -326,14 +361,17 @@ body {
     }
 
     .logo {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .about h2,
     .projects h2,
-    .skills h2,
     .contact h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    .project {
+        padding: 18px 10px 14px 10px;
     }
 }
 
